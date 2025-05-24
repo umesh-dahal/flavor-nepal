@@ -148,12 +148,25 @@
     <h3>Contact us</h3>
 
 <form action="https://formsubmit.co/da.umeshh@gmail.com" method="POST" style="max-width:100%; margin-top: 20px; margin-left: 2%; margin-right: 2%;">
+  
+  <!-- Disable CAPTCHA and Set Proper Redirect -->
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_next" value="https://umesh-dahal.github.io/flavor-nepal/">
+
+  <!-- Name -->
   <input type="text" name="name" placeholder="नाम" required 
          style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px; margin-bottom:10px; font-size:1em;">
 
+  <!-- Phone Number -->
+  <input type="tel" name="phone" placeholder="फोन नम्बर" required 
+         pattern="\\d{10}" 
+         style="width:100%; padding:10px; border:1px solid #ccc; border-radius:5px; margin-bottom:10px; font-size:1em;">
+
+  <!-- Message / Order -->
   <textarea name="message" placeholder="तपाईंको सन्देश वा अर्डर लेख्नुहोस्..." required 
             style="width:100%; height:120px; padding:10px; border:1px solid #ccc; border-radius:5px; font-size:1em;"></textarea><br><br>
 
+  <!-- Submit Button -->
   <button type="submit" 
           style="background-color:#d84315; color:white; padding:10px 20px; border:none; border-radius:6px; font-size:1em; cursor:pointer;">
     पठाउनुहोस्
@@ -162,8 +175,9 @@
 
 
 
+
     <div style="display: inline-block; text-align: left; margin: auto; padding-left: 15px;">
-        <p><strong>Flavour Nepal</strong></p>
+        <43>Flavour Nepal</h3>
         <p>
             <img src="static/images/location.png" alt="location" style="width:20px; vertical-align:middle; margin-right:6px;">
             यशश्वी मार्ग (न्यूरो हस्पिटलको नजिक)
