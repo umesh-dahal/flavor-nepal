@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavour Nepal - टाजा बनेको स्वाद रोजेको</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #fefcea, #f1da36);
+            margin: 0;
+            padding: 0;
+        }
+        .flyer {
+            max-width: 480px;
+            margin: 10px auto;
+            background: #fff8e1;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+        h1 {
+            text-align: center;
+            font-size: 1.5em;
+            color: #d32f2f;
+            margin-bottom: 10px;
+        }
+        .intro {
+            text-align: center;
+            font-size: 1em;
+            margin-bottom: 20px;
+            color: #4e342e;
+        }
+        h2 {
+            background-color: #ff7043;
+            color: white;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 1em;
+            margin: 20px 0 10px;
+            border-radius: 8px;
+            transition: background 0.3s;
+        }
+        h2:hover {
+            background-color: #ff5722;
+        }
+        .product-img {
+            width: 30px;
+            height: 30px;
+            background-color: #ffe0b2;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+            border-radius: 4px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 10px;
+            display: none;
+        }
+        table.active {
+            display: table;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ffccbc;
+            font-size: 0.95em;
+        }
+        th {
+            background-color: #ffab91;
+            color: white;
+        }
+        .contact {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.95em;
+            color: #3e2723;
+        }
+        .contact a {
+            color: #d84315;
+            text-decoration: none;
+            display: block;
+            margin-top: 5px;
+        }
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div style="text-align:center; margin-bottom: 15px;">
+    <img src="static\images\banner.png" alt="Flavour Nepal Banner" style="width:100%; max-width:100%; height:auto; border-radius:10px;">
+</div>
+
+       
+        <h2 onclick="toggle('achar')">अचार</h2>
+        <table id="achar">
+            <tr><th>प्रोडक्ट</th><th>रु. / किलो</th></tr>
+            <tr><td><img src="static/images/product/radish.png" alt="radish" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">मुला</td><td>350</td></tr>
+            <tr><td><img src="static/images/product/lemon.png" alt="lemon" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">कगती</td><td><s style="color: red;">690</s> 600</td></tr>
+            <tr><td><img src="static/images/product/chilly.png" alt="chilly" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">खुर्सानी</td><td><s style="color: red;">690</s> 600</td></tr>
+            <tr><td><img src="static/images/product/mango.png" alt="mango" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">आप</td><td><s style="color: red;">690</s> 600</td></tr>
+            <tr><td><img src="static/images/product/bamboo.png" alt="bamboo" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">तामा</td><td><s style="color: red;">690</s> 600</td></tr>
+            <tr><td><img src="static/images/product/mix.png" alt="mix" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">मिक्स</td><td><s style="color: red;">700</s> 600</td></tr>
+            <tr><td><img src="static/images/product/khatti.png" alt="khatti" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">खट्टी मिठ्ठी</td><td><s style="color: red;">700</s> 600</td></tr>
+            <tr><td><img src="static/images/product/garlic.png" alt="garlic" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">लासुन</td><td>1000</td></tr>
+            <tr><td><img src="static/images/product/timur.png" alt="timur" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">टिमुर अलास</td><td><s style="color: red;">1200</s> 1000</td></tr>
+            <tr><td><img src="static/images/product/timur.png" alt="timur" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">टिमुर</td><td><s style="color: red;">1700</s> 1500</td></tr>
+            <tr><td><img src="static/images/product/hen.png" alt="Chicken" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">चिकन</td><td><s style="color: red;">1600</s> 1400</td></tr>
+            <tr><td><img src="static/images/product/goat.png" alt="goat" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">खसी</td><td>3000</td></tr>
+
+        </table>
+
+        <h2 onclick="toggle('maseura')">मस्यौरा</h2>
+        <table id="maseura">
+            <tr><th>प्रोडक्ट</th><th>रु. / किलो</th></tr>
+            <tr><td><img src="static/images/product/potato.png" alt="khatti" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">आलु</td><td>800</td></tr>
+            <tr><td><img src="static/images/product/radish.png" alt="khatti" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">मुला</td><td>800</td></tr>
+            <tr><td><img src="static/images/product/cauli.png" alt="khatti" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">कोबी</td><td>1000</td></tr>
+            <tr><td><img src="static/images/product/lauka.png" alt="khatti" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">लौका</td><td>1000</td></tr>
+
+            <tr><td><img src="static/images/product/karela.png" alt="khatti" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">करेला</td><td><s style="color: red;">1200</s> 1000</td></tr>
+            <tr><td><img src="static/images/product/kubindo.png" alt="khatti" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">कुभिन्डो</td><td><s style="color: red;">1600</s> 1400</td></tr>
+            <tr><td><img src="static/images/product/methi.png" alt="khatti" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">मेथी</td><td><s style="color: red;">1600</s> 1400</td></tr>
+        </table>
+
+        <h2 onclick="toggle('chips')">चिप्स र जाम</h2>
+        <table id="chips">
+            <tr><th>प्रोडक्ट</th><th>रु. / किलो</th></tr>
+            <tr><td><img src="static/images/product/chips.png" alt="khatti" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">होममेड आलु चिप्स</td><td>800</td></tr>
+            <tr><td><img src="static/images/product/jam.png" alt="khatti" style="width:24px; height:24px; vertical-align:middle; margin-right:6px;">ज्याम अर्डर अनुसार (जस्तै: स्याउ, आँप, केरा)</td><td><s style="color: red;">1400</s> 1200</td></tr>
+        </table>
+
+        <div class="contact">
+    <h3>Contact us</h3>
+    <div style="display: inline-block; text-align: left; margin: auto; padding-left: 15px;">
+        <p><strong>Flavour Nepal</strong></p>
+        <p>
+            <img src="static/images/location.png" alt="location" style="width:20px; vertical-align:middle; margin-right:6px;">
+            यशश्वी मार्ग (न्यूरो हस्पिटलको नजिक)
+        </p>
+        <p>
+            <img src="static/images/mobile.png" alt="mobile" style="width:20px; vertical-align:middle; margin-right:6px;">
+            +977 9843659658, +977 9862213096
+        </p>
+        <p>
+            <img src="static/images/whatsapp.png" alt="whatsapp" style="width:20px; vertical-align:middle; margin-right:6px;">
+             +977 9804389568
+        </p>
+ <p>
+            <a href="mailto:da.umeshh@gmail.com">
+                <img src="static/images/gmail.png" alt="Gmail" style="width:20px; vertical-align:middle; margin-right:6px;">
+                Gmail
+            </a>
+        <p>
+            <a href="https://www.facebook.com/dhanamaya.gautam.dahal" target="_blank">
+                <img src="static/images/facebook.png" alt="Facebook" style="width:20px; vertical-align:middle; margin-right:6px;">
+                Facebook  <img src="static/images/link.png" alt="Link Icon" style="width:16px; vertical-align:middle; margin-left:6px;">
+            </a>
+        </p>
+        <p>
+            <a href="https://www.tiktok.com/@dhanamaya333" target="_blank">
+                <img src="static/images/tiktok.png" alt="Tiktok" style="width:20px; vertical-align:middle; margin-right:6px;">
+                TikTok <img src="static/images/link.png" alt="Link Icon" style="width:16px; vertical-align:middle; margin-left:6px;">
+            </a>
+        </p>
+       
+        </p>
+        <p>
+<a href="https://www.google.com/maps/dir/Neuro+Cardio+%26+Multispeciality+Hospital+Pvt.+Ltd.,+Sankhadhar+Sakhwa+Marg,+Biratnagar,+Nepal/26.454522,87.283789/@26.4537054,87.2826601,678m/data=!3m1!1e3!4m9!4m8!1m5!1m1!1s0x39ef745000000001:0x2e285e8569816c06!2m2!1d87.2844097!2d26.4531579!1m0!3e0?entry=ttu&g_ep=EgoyMDI1MDUyMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+    <img src="static/images/map.png" alt="Map" style="width:20px; vertical-align:middle; margin-right:6px;">
+    Google Map
+    <img src="static/images/link.png" alt="Link Icon" style="width:16px; vertical-align:middle; margin-left:6px;">
+</a>
+
+        </p>
+    </div>
+ <img src="static\images\house.jpeg" alt="Location Image" style="width:100%; max-width:100%; height:auto; border-radius:8px; margin-bottom:10px;">
+</div>
+</div>
+    </div>
+
+    <script>
+        function toggle(id) {
+            const table = document.getElementById(id);
+            table.classList.toggle("active");
+        }
+    </script>
+</body>
+</html>
